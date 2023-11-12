@@ -1,0 +1,8 @@
+# Ignore All
+*
+# But not
+!mdb/
+!user/
+!nachrichten/
+!nachricht/
+!.gitignore

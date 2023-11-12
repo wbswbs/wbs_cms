@@ -1,0 +1,65 @@
+{
+  "name": "wbswbs/wbs_cms",
+  "description": "CMS System",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wolfgang Blessen",
+      "email": "wolfgang@blessen.de"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "third-party/required-plugin": true,
+      "unnecessary/plugin": false
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "doctrine/orm": "*",
+    "doctrine/doctrine-bundle": "*",
+    "ext-curl": "*",
+    "ext-decimal": "*",
+    "ext-fileinfo": "*",
+    "ext-ftp": "*",
+    "ext-gettext": "*",
+    "ext-imagick": "*",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "ext-apcu": "*",
+    "ext-pdo_mysql": "*",
+    "ext-mbstring": "*",
+    "ext-tidy": "*",
+    "gedmo/doctrine-extensions": "*",
+    "php": "8.2.*",
+    "michelf/php-markdown": "*",
+    "monolog/monolog": "*",
+    "phpmailer/phpmailer": "*",
+    "setasign/fpdf": "*",
+    "smarty/smarty": "*",
+    "symfony/dotenv": "*",
+    "symfony/routing": "*",
+    "symfony/yaml": "*",
+    "spipu/html2pdf": "*",
+    "wrench/wrench": "*",
+    "cboden/ratchet": "*",
+    "textalk/websocket": "*",
+    "knplabs/knp-menu-bundle": "^3.2",
+    "wbswbs/wbsfw": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:wbswbs/wbsfw.git"
+    }
+  ]
+}

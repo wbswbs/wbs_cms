@@ -1,0 +1,26 @@
+#
+# Definition der Routen für die Anwendung
+#
+#  Beschreibung siehe
+#  https://symfony.com/doc/current/routing.html
+#
+#   Routing Paths sollten keinen Slash am Ende haben, dann greifen sie nicht !!!!!
+#
+# Reihenfolge beachten
+#
+dashboard:
+  path:     /
+  options:
+    wbs:  abc
+  methods:    GET
+  controller: 'App\Cms\CmsController'
+
+#
+#  Seiten
+#
+cms:
+  path:     /seite/{seite}
+  methods:    GET
+  controller: 'App\Cms\CmsController'
+  defaults:
+    action:  'seite'

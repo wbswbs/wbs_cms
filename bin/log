@@ -1,0 +1,7 @@
+#!/bin/bash
+month=$(date +%m)
+year=$(date +%Y)
+the_file="var/log/wbs-${month}-${year}.log"
+echo "Show and follow Logfile ${the_file}"
+tail -F -n 50 ${the_file}
+exit 0

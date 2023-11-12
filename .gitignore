@@ -1,0 +1,25 @@
+# phpStorm
+.idea/
+
+# Composer vendor Directory
+vendor/
+
+# Ignore Local Configuration
+.env.local
+.env.local.backup
+/config/menu/*.json_bak
+
+# Cache
+/var/cache/
+!/var/cache/global/
+# Template Cache
+smarty/
+templates_c/
+
+# Php Documentor
+.phpdoc/
+_doc/
+phpdoc.xml
+
+# Ignore double minified Files
+*.min.min.js
