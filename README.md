@@ -1,6 +1,19 @@
-# wbs_cms
+# wbs cms
 
-New CMS, using wbsfw 
+A very simple CMS, using PHP and the wbsfw - WBS Framework
+
+All Webpages and Content are build with Smarty Templates
+
+# Installation 
+
+<code>
+git clone https://github.com/wbswbs/wbs_cms.git
+php composer.phar install
+sudo cp config/nginx/wbs_cms.conf /etc/nginx/sites-available/your_project.conf
+sudo edit /etc/nginx/sites-available/your_project.conf
+# Symbolic Link to /sites-enabled
+Add Domain to /etc/hosts
+</code>
 
 # Aufbau
 
