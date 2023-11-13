@@ -1,0 +1,17 @@
+# For phpstan Installation see:
+# https://gist.github.com/fedir/b2cfbbee7ed13f26d916391b1004a197
+# https://github.com/phpstan/phpstan
+# https://packagist.org/packages/phpstan/phpstan
+# https://github.com/box-project/box/issues/574
+#
+#
+
+parameters:
+    level:
+        1
+    paths:
+       - public/index.php
+       - config/cli-config.php
+       - src
+    ignoreErrors:
+#        - '#Variable \$[a-zA-Z0-9\\_]+ in isset\(\) always exists and is not nullable.#'

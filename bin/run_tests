@@ -1,0 +1,67 @@
+#!/bin/bash
+
+#
+# Reading the .env Parameters here will kill the Scripts: $_ENV is then empty
+#
+. "$(dirname "$0")/mdf.sh"
+
+#Red='\033[0;31m'
+#White='\033[1;37m'
+#Purple='\033[0;35m'
+Default=$White
+clear
+PS3=$(echo -e "Bitte ${Purple}Test Szenario${Default} wählen(1-7): ")
+echo -e ${Red}===================
+echo -e === ${Default}TestControl${Red} ===
+echo -e ===================${Default}
+tests=("Phpstan"  "CodeceptUnit" "CodeceptLocal" "CodeceptTest" "CodeceptLive" "StartSelenium" "Quit")
+select test in "${tests[@]}"; do
+    case $test in
+        "Phpstan")
+#            echo ===================
+#            echo "Starting phpstan"
+#            echo ===================
+            _title "Starting phpstan"
+            phpstan
+            ;;
+        "CodeceptUnit")
+            echo ===================
+            echo "$test was selected."
+            echo ===================
+            codecept run unit --env localhost
+            ;;
+        "CodeceptLocal")
+            echo ===================
+            echo "$test was selected."
+            echo ===================
+            codecept run acceptance --env localhost
+            ;;
+        "CodeceptTest")
+            echo ===================
+            echo "$test was selected."
+            echo ===================
+            codecept run acceptance --env testserver
+            ;;
+        "CodeceptLive")
+            echo ===================
+            echo "$test was selected."
+            echo ===================
+            codecept run acceptance --env liveserver
+#	          break
+            ;;
+        "StartSelenium")
+            echo ===================
+            echo "Starting Selenium"
+            echo ===================
+            start_selenium
+            ;;
+	    "Quit")
+            echo -e ${Red}===================
+            echo -e === ${Default}CU Next${Red}     ===
+            echo -e ===================${Default}
+
+	    exit
+	    ;;
+        *) echo "Ungültige Option $REPLY";;
+    esac
+done
