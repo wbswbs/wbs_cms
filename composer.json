@@ -40,7 +40,7 @@
     "gedmo/doctrine-extensions": "3.14.*",
     "php": "8.2.*",
     "setasign/fpdf": "1.8.*",
-    "symfony/routing": "6.4.",
+    "symfony/routing": "6.4.*",
     "symfony/yaml": "7.0.*",
     "wrench/wrench": "2.0.*",
     "cboden/ratchet": "0.4.*",
