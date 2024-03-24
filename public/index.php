@@ -31,7 +31,7 @@ try{
         $Routing && $Routing instanceof \App\Routing\RoutingController)
     {
 //        $Routing->view()->renderGuestError($e->getMessage());
-        $Routing->view()->renderError($e->getMessage());
+        $Routing->view()->renderError($e->getMessage(),400);
 
     }else {
         echo 'EXCEPTION: ' . $e->getMessage();
@@ -40,7 +40,4 @@ try{
     }
 
     exit (0);
-
-}catch(Exception|Error $e){
-    echo "Error: ".$e->getMessage();
 }
