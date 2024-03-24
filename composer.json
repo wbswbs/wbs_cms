@@ -24,8 +24,6 @@
     }
   },
   "require": {
-    "doctrine/orm": "*",
-    "doctrine/doctrine-bundle": "*",
     "ext-curl": "*",
     "ext-decimal": "*",
     "ext-fileinfo": "*",
@@ -53,8 +51,7 @@
     "wrench/wrench": "*",
     "cboden/ratchet": "*",
     "textalk/websocket": "*",
-    "knplabs/knp-menu-bundle": "^3.2",
-    "wbswbs/wbsfw": "*"
+    "wbswbs/wbsfw": "1.2.*"
   },
   "repositories": [
     {
