@@ -23,7 +23,7 @@ try {
     $conn=$entityManager->getConnection();
     $conn->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
 
-    return ConsoleRunner::createHelperSet($entityManager);
+    return ConsoleRunner::createApplication($entityManager);
 
 }catch (Exception $e){
     die('Error in '.__FILE__.': '.$e->getMessage().PHP_EOL);

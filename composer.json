@@ -1,6 +1,6 @@
 {
   "name": "wbswbs/wbs_cms",
-  "description": "CMS System",
+  "description": "Einfaches CMS auf Smarty Template Basis",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
@@ -24,8 +24,8 @@
     }
   },
   "require": {
+    "cboden/ratchet": "0.4.*",
     "ext-curl": "*",
-    "ext-decimal": "*",
     "ext-fileinfo": "*",
     "ext-ftp": "*",
     "ext-gettext": "*",
@@ -42,10 +42,9 @@
     "setasign/fpdf": "1.8.*",
     "symfony/routing": "6.4.*",
     "symfony/yaml": "7.0.*",
-    "wrench/wrench": "2.0.*",
-    "cboden/ratchet": "0.4.*",
     "textalk/websocket": "1.6.*",
-    "wbswbs/wbsfw": "1.2.*"
+    "wbswbs/wbsfw": "1.2.*",
+    "wrench/wrench": "2.0.*"
   },
   "repositories": [
     {

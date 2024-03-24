@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Clear all metadata cache of the various cache drivers
+echo "doctrine orm:clear-cache:metadata"
+vendor/bin/doctrine orm:clear-cache:metadata
+
+# Clear all query cache of the various cache drivers
+echo "doctrine orm:clear-cache:query"
+vendor/bin/doctrine  orm:clear-cache:query
+
+# Clear a second-level cache collection region
+#echo "doctrine orm:clear-cache:region:collection"
+#vendor/bin/doctrine  orm:clear-cache:region:collection
+
+# Clear a second-level cache entity region
+#echo "doctrine orm:clear-cache:region:entity"
+#vendor/bin/doctrine  orm:clear-cache:region:entity
+
+# Clear a second-level cache query region
+#echo "doctrine orm:clear-cache:region:query"
+#vendor/bin/doctrine  orm:clear-cache:region:query
+
+# Clear all result cache of the various cache drivers
+echo "doctrine orm:clear-cache:result"
+vendor/bin/doctrine  orm:clear-cache:result
+
+#exit 0

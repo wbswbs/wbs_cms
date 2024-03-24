@@ -1,0 +1,4 @@
+#!/bin/bash
+#echo "Update the Schema"
+vendor/bin/doctrine orm:schema-tool:update --dump-sql $1
+#exit 0

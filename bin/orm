@@ -1,0 +1,4 @@
+#!/bin/bash
+#echo "Link to vendor bin doctrine"
+vendor/bin/doctrine $1
+#exit 0
